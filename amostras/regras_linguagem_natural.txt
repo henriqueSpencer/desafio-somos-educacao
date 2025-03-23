@@ -1,0 +1,6 @@
+Se número de sentenças é maior ou igual a três, então a categoria é A.
+Se "Pitágoras" aparece no texto, então a categoria é A
+Se "onde" aparece no texto E número de tokens é maior que 90, então a categoria é B.
+Se número de "," é menor que 10, então a categoria é C.
+Se número de sentenças é maior que 3 E número de sentenças com expressão é menor que 3, então a categoria é B.
+Se não tem expressões, então a categoria é C.
