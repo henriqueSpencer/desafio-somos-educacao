@@ -127,6 +127,14 @@ Se número de tokens é maior que 90 E "Pitágoras" aparece no texto, então a c
 Para executar os testes:
 
 ```bash
+# Especificmaente os testes da utils:
+poetry run pytest tests/test_utils.py
+# Especificmaente os testes do problema 1:
+poetry run pytest tests/test_problema1.py
+# Especificmaente os testes do problema 2:
+poetry run pytest tests/test_problema2.py
+
+# Executando todos os testes:
 poetry run pytest
 ```
 
