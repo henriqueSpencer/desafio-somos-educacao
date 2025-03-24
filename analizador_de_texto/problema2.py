@@ -8,13 +8,10 @@ Classes e funções:
 - ParserRegras: classe para analisar e processar regras em linguagem natural
 - aplica_regras: aplica as regras processadas aos textos e determina suas categorias
 """
-
 from typing import List, Dict, Optional, Callable, Any
 import re
-
 from analizador_de_texto.utils import (verificar_presenca_token, contar_tokens, contar_ocorrencias_token, ler_regras,
                                        ler_expressoes, separar_sentencas, verificar_expressao_inicio)
-
 
 class ParserRegras:
     """Classe para analisar e processar regras em linguagem natural."""

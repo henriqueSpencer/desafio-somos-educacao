@@ -1,17 +1,18 @@
 [tool.poetry]
-name = "desafio-somos-educacao"
+name = "analizador-de-texto"
 version = "0.1.0"
-description = "Solução do desafio técnico da SOMOS Educação em Python"
-authors =  ["Henrique Spencer Albuquerque <henriquespencer11@gmail.com>"]
+description = "Solução do desafio técnico da SOMOS Educação em Python para análise de expressões e categorização de textos"
+authors = ["Henrique Spencer Albuquerque <henriquespencer11@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "desafio", from = "src" }]
+packages = [{ include = "analizador_de_texto" }]
+repository = "https://github.com/henriqueSpencer/desafio-somos-educacao"
 
 [tool.poetry.dependencies]
-python = ">=3.13"
+python = ">=3.8,<4.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

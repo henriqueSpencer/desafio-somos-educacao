@@ -1,6 +1,6 @@
 """__init__.py
 ===========================
-Este módulo expõe as duas funções principais:
+Este pacote expõe as duas funções principais:
 - encontra_expressoes: identifica expressões predefinidas no início de sentenças
 - aplica_regras: categoriza textos aplicando regras de inferência
 """
