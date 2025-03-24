@@ -84,20 +84,11 @@ Exemplo de saída:
 
 ## Estrutura de arquivos
 
-Os arquivos de expressões e regras são esperados na pasta `amostras` com os seguintes nomes:
+Os arquivos de expressões e regras são esperados na pasta `analisador_de_texto/dados` com os seguintes nomes:
 
 - `expressoes.txt`: Lista de expressões a serem verificadas (uma por linha)
 - `regras_linguagem_natural.txt`: Regras para categorização em linguagem natural (uma por linha)
 
-Se você deseja usar arquivos com nomes ou localizações diferentes, pode passar os caminhos como parâmetros:
-
-```python
-from analizador_de_texto import aplica_regras
-
-categorias = aplica_regras(textos, 
-                          arquivo_regras="caminho/para/regras.txt", 
-                          arquivo_expressoes="caminho/para/expressoes.txt")
-```
 
 ## Formato das regras
 
