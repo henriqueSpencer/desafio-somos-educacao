@@ -1,9 +1,11 @@
-"""
-Desafio Python - Processamento de textos e categorização baseada em regras
+"""__init__.py
+===========================
+Este módulo expõe as duas funções principais:
+- encontra_expressoes: identifica expressões predefinidas no início de sentenças
+- aplica_regras: categoriza textos aplicando regras de inferência
 """
 
+from analizador_de_texto.problema1 import encontra_expressoes
+from analizador_de_texto.problema2 import aplica_regras
 
-# from desafio_python.encontra_expressoes import encontra_expressoes
-# from desafio_python.aplica_regras import aplica_regras
-#
-# __all__ = ['encontra_expressoes', 'aplica_regras']
+__all__ = ['encontra_expressoes', 'aplica_regras']
