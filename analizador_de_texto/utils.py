@@ -7,12 +7,18 @@ import json
 from typing import List, Dict, Optional
 import re
 import os
+import importlib.resources as pkg_resources
 
 ### PROBLEMA 1 ###
 def caminho_amostras(nome_arquivo: str) -> str:
-    """Retorna o caminho completo para um arquivo de amostras."""
-    import os
-    import importlib.resources as pkg_resources
+    """Retorna o caminho completo para um arquivo de amostras.
+
+    Args:
+        nome_arquivo (str): Nome do arquivo de amostras.
+
+    Returns:
+        str: Caminho completo para o arquivo de amostras.
+    """
     try:
         # Tenta encontrar como recurso do pacote
         with pkg_resources.path('analizador_de_texto.dados', nome_arquivo) as p:
