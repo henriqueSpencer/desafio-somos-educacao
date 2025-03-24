@@ -5,6 +5,7 @@ description = "Solução do desafio técnico da SOMOS Educação em Python para 
 authors = ["Henrique Spencer Albuquerque <henriquespencer11@gmail.com>"]
 readme = "README.md"
 packages = [{ include = "analizador_de_texto" }]
+include = ["analizador_de_texto/dados/*.txt", "analizador_de_texto/dados/*.json"]
 repository = "https://github.com/henriqueSpencer/desafio-somos-educacao"
 
 [tool.poetry.dependencies]

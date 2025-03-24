@@ -10,20 +10,21 @@ import os
 
 ### PROBLEMA 1 ###
 def caminho_amostras(nome_arquivo: str) -> str:
-    """Retorna o caminho completo para um arquivo de amostras.
-
-    Args:
-        nome_arquivo (str): Nome do arquivo de amostras.
-
-    Returns:
-        str: Caminho completo para o arquivo de amostras.
-    """
-    module_dir = os.path.dirname(os.path.abspath(__file__))
-    return os.path.join(
-        os.path.dirname(module_dir),
-        'amostras',
-        nome_arquivo
-    )
+    """Retorna o caminho completo para um arquivo de amostras."""
+    import os
+    import importlib.resources as pkg_resources
+    try:
+        # Tenta encontrar como recurso do pacote
+        with pkg_resources.path('analizador_de_texto.dados', nome_arquivo) as p:
+            return str(p)
+    except (ImportError, ModuleNotFoundError):
+        # Fallback para desenvolvimento local
+        module_dir = os.path.dirname(os.path.abspath(__file__))
+        return os.path.join(
+            module_dir,
+            'dados',
+            nome_arquivo
+        )
 
 def ler_expressoes(nome_arquivo: str = "expressoes.txt") -> List[List[str]]:
     """Lê a lista de expressões definida em um arquivo e retorna em formato de lista.
